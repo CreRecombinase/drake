@@ -67,7 +67,7 @@ assert_pkg <- function(pkg, version = NULL, install = "install.packages") {
   if (is_too_old) {
     stop(
       "package ", pkg, " must be version ", version, " or greater. ",
-      "Found version ", version, " installed.",
+      "Found version ", installed_version, " installed.",
       "Please update it with ", install, "(\"", pkg, "\").",
       call. = FALSE
     )
